@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.App {
+  background-color: #c2c2d6;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.calculator {
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  border: 2px solid #666666;
+}
+#display {
+  width: 100%;
+  height: 80px;
+  padding: 15px;
+  text-align: end;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+}
+#d-1 {
+  color: #ffa500;
+}
+#d-2 {
+  color: #fff;
+}
+#clear {
+  grid-area: clear;
+  background-color: #ac3939;
+}
+#divide {
+  grid-area: divide;
+  background-color: #666666;
+}
+#multiply {
+  grid-area: multiply;
+  background-color: #666666;
+}
+#subtract {
+  grid-area: subtract;
+  background-color: #666666;
+}
+#add {
+  grid-area: add;
+  background-color: #666666;
+}
+#equals {
+  grid-area: equals;
+  background-color: #004466;
+}
+#decimal {
+  grid-area: decimal;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#zero {
+  grid-area: zero;
+}
+.key-pad {
+  width: 98%;
+  height: 362px;
+  display: grid;
+  grid-template-areas:
+    "clear clear divide multiply"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals";
+  gap: 2px;
+  padding: 5px;
+  font-family: "Share Tech Mono", monospace;
+}
+.key-pad > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d4d4d;
+  text-align: center;
+  font-size: 30px;
+}
+.key-pad > div:hover {
+  border: 3px solid #00264d;
+}
+
+.footer {
+  color: #00264d;
+}
